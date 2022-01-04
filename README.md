@@ -26,4 +26,4 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-This was how I attempted to integrate the frontend and backend: call setState locally, then use API calls to change the backend data. I am not sure if this is the best way, or if there are other methods to update the state after an API call is made. (I was unfortunately unable to find an efficient solution online)
+I attempted to integrate the frontend and backend by calling setState locally, then use API calls to change the backend data. I am not sure if this is the best way, or if there are other methods to update the state after an API call is made. (I was unfortunately unable to find an efficient solution online)
