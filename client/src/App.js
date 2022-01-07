@@ -36,17 +36,11 @@ function App() {
 
   // Toggle reminder
   const toggleReminder = (id) => {
-    // Update backend
-    const updateDB = () => {
-      const task = tasks.find(({ _ID }) => _ID === id);
-      console.log(task.reminder);
-      axios.put(`http://127.0.0.1:5000/${id}`, { text: task.text, reminder: !task.reminder });
-    };
+    setTasks(tasks.map((task) => (task._ID === id ? { ...task, reminder: !task.reminder } : task)));
 
-    setTasks(
-      tasks.map((task) => (task._ID === id ? { ...task, reminder: !task.reminder } : task)),
-      () => updateDB(),
-    );
+    // Update backend
+    const task = tasks.find(({ _ID }) => _ID === id);
+    axios.put(`http://127.0.0.1:5000/${id}`, { text: task.text, reminder: !task.reminder });
   };
 
   return (
