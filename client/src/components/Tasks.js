@@ -1,18 +1,20 @@
-import Task from "./Task"
+/* eslint-disable no-underscore-dangle */
+import React from 'react';
+import Task from './Task';
 
-const Tasks = ({ tasks, onDelete, onToggle }) => {
+function Tasks({ tasks, onDelete, onToggle }) {
   return (
     <>
-    {tasks.map((task) => (
-      <Task 
-        key={task._ID} 
-        task={task}
-        onDelete={onDelete} 
-        onToggle={onToggle}
-      />
-    ))}
+      {tasks.map((task) => (
+        <Task
+          key={task._ID}
+          task={task}
+          onDelete={onDelete}
+          onToggle={onToggle}
+        />
+      ))}
     </>
-  )
+  );
 }
 
-export default Tasks
+export default Tasks;
