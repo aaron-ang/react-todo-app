@@ -4,7 +4,8 @@ GitHub page: https://aaron-ang.github.io/H4I_Impact_Team_Challenge
 
 **NOTE**
 
-Functionality in GitHub page will not work as it is static and does not use a backend. Refer to walkthrough below for expected behavior
+* Functionality in GitHub page will not work as it is static and does not use a backend
+* Refer to walkthrough below for expected behavior
 
 ## Tech Stack
 * Frontend: React
