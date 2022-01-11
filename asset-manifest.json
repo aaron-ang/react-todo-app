@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/H4I_Impact_Team_Challenge/static/css/main.52d59849.chunk.css",
+    "main.js": "/H4I_Impact_Team_Challenge/static/js/main.ad2d41e3.chunk.js",
+    "main.js.map": "/H4I_Impact_Team_Challenge/static/js/main.ad2d41e3.chunk.js.map",
+    "runtime-main.js": "/H4I_Impact_Team_Challenge/static/js/runtime-main.1d98d0d9.js",
+    "runtime-main.js.map": "/H4I_Impact_Team_Challenge/static/js/runtime-main.1d98d0d9.js.map",
+    "static/js/2.00393a93.chunk.js": "/H4I_Impact_Team_Challenge/static/js/2.00393a93.chunk.js",
+    "static/js/2.00393a93.chunk.js.map": "/H4I_Impact_Team_Challenge/static/js/2.00393a93.chunk.js.map",
+    "static/js/3.a05fb72a.chunk.js": "/H4I_Impact_Team_Challenge/static/js/3.a05fb72a.chunk.js",
+    "static/js/3.a05fb72a.chunk.js.map": "/H4I_Impact_Team_Challenge/static/js/3.a05fb72a.chunk.js.map",
+    "index.html": "/H4I_Impact_Team_Challenge/index.html",
+    "static/css/main.52d59849.chunk.css.map": "/H4I_Impact_Team_Challenge/static/css/main.52d59849.chunk.css.map",
+    "static/js/2.00393a93.chunk.js.LICENSE.txt": "/H4I_Impact_Team_Challenge/static/js/2.00393a93.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d98d0d9.js",
+    "static/js/2.00393a93.chunk.js",
+    "static/css/main.52d59849.chunk.css",
+    "static/js/main.ad2d41e3.chunk.js"
+  ]
+}
