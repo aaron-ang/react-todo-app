@@ -1,6 +1,10 @@
 # H4I_Impact_Team_Challenge - *Simple Todo*
 
-Github page: https://aaron-ang.github.io/H4I_Impact_Team_Challenge
+GitHub page: https://aaron-ang.github.io/H4I_Impact_Team_Challenge
+
+**NOTE**
+
+Functionality in GitHub page will not work as it is static and does not use a backend
 
 ## Tech Stack
 * Frontend: React
