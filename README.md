@@ -1,4 +1,4 @@
-# H4I_Impact_Team_Challenge - *Simple Todo*
+# H4I Impact Team Challenge - *Simple Todo*
 
 GitHub page: https://aaron-ang.github.io/H4I_Impact_Team_Challenge
 
