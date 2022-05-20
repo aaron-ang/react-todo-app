@@ -4,13 +4,13 @@ import React from 'react';
 
 function Task({ task, onDelete, onToggle }) {
   return (
-    <div className={`task ${task.reminder ? 'reminder' : ''}`} onDoubleClick={() => onToggle(task._ID)}>
+    <div
+      className={`task ${task.reminder ? 'reminder' : ''}`}
+      onDoubleClick={() => onToggle(task._ID)}
+    >
       <h3>
         {task.text}
-        <FaTimes
-          style={{ color: 'red' }}
-          onClick={() => onDelete(task._ID)}
-        />
+        <FaTimes style={{ color: 'red' }} onClick={() => onDelete(task._ID)} />
       </h3>
       {/* <p>{task.day}</p> */}
     </div>

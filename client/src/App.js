@@ -21,7 +21,10 @@ function App() {
   // Add task
   const addTask = async (task) => {
     // Update backend
-    await axios.post('http://127.0.0.1:5000/', { text: task.text, reminder: task.reminder });
+    await axios.post('http://127.0.0.1:5000/', {
+      text: task.text,
+      reminder: task.reminder,
+    });
     // GET new data
     const result = await axios.get('http://127.0.0.1:5000/');
     setTasks(result.data);
@@ -36,18 +39,27 @@ function App() {
 
   // Toggle reminder
   const toggleReminder = (id) => {
-    setTasks(tasks.map((task) => (task._ID === id ? { ...task, reminder: !task.reminder } : task)));
+    setTasks(
+      tasks.map((task) => (task._ID === id ? { ...task, reminder: !task.reminder } : task)),
+    );
 
     // Update backend
     const task = tasks.find(({ _ID }) => _ID === id);
-    axios.put(`http://127.0.0.1:5000/${id}`, { text: task.text, reminder: !task.reminder });
+    axios.put(`http://127.0.0.1:5000/${id}`, {
+      text: task.text,
+      reminder: !task.reminder,
+    });
   };
 
   return (
     <div className="container">
       <Header onAdd={() => setShowAddTask(!showAddTask)} />
       {showAddTask && <AddTask onAdd={addTask} />}
-      {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />) : ('No Tasks To Show')}
+      {tasks.length > 0 ? (
+        <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+      ) : (
+        'No Tasks To Show'
+      )}
     </div>
   );
 }
