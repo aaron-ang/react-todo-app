@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/H4I-Impact-Team-Challenge/static/css/main.52d59849.chunk.css",
-    "main.js": "/H4I-Impact-Team-Challenge/static/js/main.76713d7d.chunk.js",
-    "main.js.map": "/H4I-Impact-Team-Challenge/static/js/main.76713d7d.chunk.js.map",
-    "runtime-main.js": "/H4I-Impact-Team-Challenge/static/js/runtime-main.2bcd7c30.js",
-    "runtime-main.js.map": "/H4I-Impact-Team-Challenge/static/js/runtime-main.2bcd7c30.js.map",
-    "static/js/2.00393a93.chunk.js": "/H4I-Impact-Team-Challenge/static/js/2.00393a93.chunk.js",
-    "static/js/2.00393a93.chunk.js.map": "/H4I-Impact-Team-Challenge/static/js/2.00393a93.chunk.js.map",
-    "static/js/3.a05fb72a.chunk.js": "/H4I-Impact-Team-Challenge/static/js/3.a05fb72a.chunk.js",
-    "static/js/3.a05fb72a.chunk.js.map": "/H4I-Impact-Team-Challenge/static/js/3.a05fb72a.chunk.js.map",
-    "index.html": "/H4I-Impact-Team-Challenge/index.html",
-    "static/css/main.52d59849.chunk.css.map": "/H4I-Impact-Team-Challenge/static/css/main.52d59849.chunk.css.map",
-    "static/js/2.00393a93.chunk.js.LICENSE.txt": "/H4I-Impact-Team-Challenge/static/js/2.00393a93.chunk.js.LICENSE.txt"
+    "main.css": "/react-todo-app/static/css/main.52d59849.chunk.css",
+    "main.js": "/react-todo-app/static/js/main.76713d7d.chunk.js",
+    "main.js.map": "/react-todo-app/static/js/main.76713d7d.chunk.js.map",
+    "runtime-main.js": "/react-todo-app/static/js/runtime-main.339f8590.js",
+    "runtime-main.js.map": "/react-todo-app/static/js/runtime-main.339f8590.js.map",
+    "static/js/2.00393a93.chunk.js": "/react-todo-app/static/js/2.00393a93.chunk.js",
+    "static/js/2.00393a93.chunk.js.map": "/react-todo-app/static/js/2.00393a93.chunk.js.map",
+    "static/js/3.a05fb72a.chunk.js": "/react-todo-app/static/js/3.a05fb72a.chunk.js",
+    "static/js/3.a05fb72a.chunk.js.map": "/react-todo-app/static/js/3.a05fb72a.chunk.js.map",
+    "index.html": "/react-todo-app/index.html",
+    "static/css/main.52d59849.chunk.css.map": "/react-todo-app/static/css/main.52d59849.chunk.css.map",
+    "static/js/2.00393a93.chunk.js.LICENSE.txt": "/react-todo-app/static/js/2.00393a93.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2bcd7c30.js",
+    "static/js/runtime-main.339f8590.js",
     "static/js/2.00393a93.chunk.js",
     "static/css/main.52d59849.chunk.css",
     "static/js/main.76713d7d.chunk.js"
