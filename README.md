@@ -1,6 +1,6 @@
 # H4I Impact Team Challenge - *Simple Todo*
 
-GitHub page: https://aaron-ang.github.io/H4I-Impact-Team-Challenge
+GitHub page: https://aaron-ang.github.io/react-todo-app
 
 **NOTE**
 
