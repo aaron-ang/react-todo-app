@@ -4,7 +4,7 @@ GitHub page: https://aaron-ang.github.io/react-todo-app
 
 **NOTE**
 
-* Functionality in GitHub page will **NOT** work as it is static and does not use a backend
+* Functionality in GitHub page will **NOT** work as I am using a locally-hosted backend
 * Refer to walkthrough below for expected behavior
 
 ## Tech Stack
