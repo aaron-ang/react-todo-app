@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function AddTask({ onAdd }) {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   // const [day, setDay] = useState('')
   const [reminder, setReminder] = useState(false);
 
@@ -9,14 +9,14 @@ function AddTask({ onAdd }) {
     e.preventDefault();
 
     if (!text) {
-      alert('Please add a task');
+      alert("Please add a task");
       return;
     }
 
     // onAdd({ text, day, reminder })
     onAdd({ text, reminder });
 
-    setText('');
+    setText("");
     // setDay('')
     setReminder(false);
   };
