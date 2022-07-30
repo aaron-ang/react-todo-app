@@ -1,9 +1,21 @@
-/* eslint-disable no-underscore-dangle */
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Header from './components/Header';
-import Tasks from './components/Tasks';
-import AddTask from './components/AddTask';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
+import AddTask from "./components/AddTask";
+import { MongoClient, ServerApiVersion } from "mongodb";
+
+const uri = process.env.REACT_APP_MONGO_URI;
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1,
+});
+client.connect((err) => {
+  const collection = client.db("tasksDB").collection("tasks");
+  // perform actions on the collection object
+  client.close();
+});
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -11,7 +23,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios.get('http://127.0.0.1:5000/');
+      const result = await axios.get("http://127.0.0.1:5000/");
       setTasks(result.data);
     };
 
@@ -21,12 +33,12 @@ function App() {
   // Add task
   const addTask = async (task) => {
     // Update backend
-    await axios.post('http://127.0.0.1:5000/', {
+    await axios.post("http://127.0.0.1:5000/", {
       text: task.text,
       reminder: task.reminder,
     });
     // GET new data
-    const result = await axios.get('http://127.0.0.1:5000/');
+    const result = await axios.get("http://127.0.0.1:5000/");
     setTasks(result.data);
   };
 
@@ -40,7 +52,9 @@ function App() {
   // Toggle reminder
   const toggleReminder = (id) => {
     setTasks(
-      tasks.map((task) => (task._ID === id ? { ...task, reminder: !task.reminder } : task)),
+      tasks.map((task) =>
+        task._ID === id ? { ...task, reminder: !task.reminder } : task
+      )
     );
 
     // Update backend
@@ -58,7 +72,7 @@ function App() {
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       ) : (
-        'No Tasks To Show'
+        "No Tasks To Show"
       )}
     </div>
   );

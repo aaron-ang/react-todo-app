@@ -1,6 +1,5 @@
-// import { useLocation } from 'react-router-dom'
-import React from 'react';
-import Button from './Button';
+import React from "react";
+import Button from "./Button";
 
 function Header({ title, onAdd }) {
   return (
@@ -12,7 +11,7 @@ function Header({ title, onAdd }) {
 }
 
 Header.defaultProps = {
-  title: 'Task Tracker',
+  title: "Task Tracker",
 };
 
 // Header.propTypes = {
